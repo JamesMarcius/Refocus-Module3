@@ -2,16 +2,109 @@ body {
   margin: 0px;
   padding: 0px;
 }
-body .nav-top-bar {
-  height: 84px;
-  flex-shrink: 0;
-  background: #192140;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #192140;
 }
-body .body {
-  height: 1097px;
-  background: #FFF;
+.header .logo {
+  color: #DCF10D;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-align: right;
 }
-body .footer {
-  height: 274px;
-  background: #10131C;
+.header .nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header .nav .nav-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header .nav .nav-container .nav-link {
+  color: #DCF10D;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
+  text-align: center;
+  text-decoration: none;
+}
+.header .nav .nav-container .nav-link:last-child {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+.header .nav .nav-container .nav-link:nth-child(2) {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+.header .nav .nav-container .nav-link:nth-child(3) {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+.header .nav .signup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .nav .signup .signup-link {
+  color: #9D9DB5;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.16px;
+  text-decoration: none;
+}
+.header .nav .signup .login {
+  display: flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 40px;
+  border: 1px solid #0266FF;
+}
+.header .nav .signup .login .login-link {
+  color: #0266FF;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.header .nav .signup .login:hover {
+  background-color: #0266FF;
+}
+.header .nav .signup .login:hover .login-link {
+  color: #ffffff;
+}
+@media (min-width: 800px) {
+  .header .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header .nav {
+    display: none;
+  }
+  .header .hamburger-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .header .hamburger-menu svg {
+    width: 100%;
+    height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
